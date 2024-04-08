@@ -18,7 +18,7 @@
 
         #set-height {
             display: block;
-            height: 5500px;
+            height: 5000px;
         }
     </style>
 </head>
@@ -30,7 +30,7 @@
         const vid = document.getElementById("vid")
         vid.pause();
         setInterval(function () {
-            vid.currentTime = window.pageYOffset / 1000;
+            vid.currentTime = window.pageYOffset / 5000;
         }, 100);
     </script>
 </body>
