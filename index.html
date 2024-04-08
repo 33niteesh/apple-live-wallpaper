@@ -29,6 +29,9 @@
     <script>
         const vid = document.getElementById("vid")
         vid.pause();
+        window.onscroll = function(){
+    vid.pause();
+    };
         setInterval(function () {
             vid.currentTime = window.pageYOffset / 5000;
         }, 100);
